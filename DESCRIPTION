@@ -1,0 +1,9 @@
+Package: fjolstTranslate
+Type: Package
+Title: Translator for fjolst package
+Version: 1.0
+Date: 2016-06-01
+Author: Paul Frater <pnf1@hi.is>
+Maintainer: Paul Frater <pnf1@hi.is>
+Description: This package translates the column names in some of the datasets in the fjolst package from Icelandic to English.
+License: IDK
