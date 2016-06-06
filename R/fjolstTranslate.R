@@ -65,7 +65,7 @@ translate.stodvar <- function() {
 translate.all.kv <- function() {
 	all.kv <- all.kv %>% rename(
 	sample.id = synis.id,
-	species = tegund,
+	species.code = tegund,
 	length = lengd,
 	age = aldur,
 	number = nr,
@@ -82,7 +82,7 @@ translate.all.kv <- function() {
 translate.all.le <- function() {
 	all.le <- all.le %>% rename(
 	sample.id = synis.id,
-	species = tegund,
+	species.code = tegund,
 	length = lengd,
 	count = fjoldi,
 	sex = kyn,
@@ -96,7 +96,7 @@ translate.all.nu <- function() {
 	sample.id = synis.id,
 	year = ar,
 	fishing.gear = veidarfaeri,
-	species = tegund,
+	species.code = tegund,
 	count.considered = fj.talid,
 	count.recommended = fj.maelt,
 	catch = afli,
