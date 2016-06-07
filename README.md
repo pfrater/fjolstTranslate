@@ -14,7 +14,7 @@ devtools::install_github("pfrater/fjolstTranslate")
 ```
 stations <- translate.stodvar() # will read in the stodvar dataset and translate column names to English
 
-check.names(ar, man, species.code, gear.type) # type in any combination of 
+translation(ar, man, species.code, gear.type) # type in any combination of 
                                               # icelandic or english column names 
                                               # to find out what they were translated to/from
 ```
