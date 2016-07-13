@@ -97,8 +97,8 @@ translate.all.nu <- function() {
 	year = ar,
 	fishing.gear = veidarfaeri,
 	species.code = tegund,
-	count.considered = fj.talid,
-	count.recommended = fj.maelt,
+	number.counted = fj.talid,
+	number.measured = fj.maelt,
 	catch = afli,
 	station.wt = vigt.synis
 	)

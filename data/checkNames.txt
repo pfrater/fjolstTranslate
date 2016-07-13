@@ -65,7 +65,7 @@ sex	kyn
 maturity	kynthroski
 gear.type	veidarfaeri
 species.code	tegund
-count.considered	fj.talid
-count.recommended	fj.maelt
+number.counted	fj.talid
+number.measured	fj.maelt
 catch	afli
 station.wt	vigt.synis
