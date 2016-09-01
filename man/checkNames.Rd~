@@ -6,7 +6,7 @@ English and Icelandic Names
 %%   ~~ data name/kind ... ~~
 }
 \description{
-Names in both English and Icelandic for datasets in the fjolst package. This will be of most use with the fj.translate() function.
+Names in both English and Icelandic for datasets in the fjolst package. This will be of most use with the translation() function.
 %%  ~~ A concise (1-5 lines) description of the dataset. ~~
 }
 \usage{data("checkNames")}
