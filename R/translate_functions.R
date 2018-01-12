@@ -1,5 +1,6 @@
-translate.all.kv <- function() {
-	rename(all.kv,
+translate_all_kv <- function() {
+    all_kv_names <- names(all.kv)
+	dplyr::rename(all.kv,
 		sample.id = synis.id,
 		length = lengd,
 		age = aldur,
@@ -17,7 +18,7 @@ translate.all.kv <- function() {
 
 
 translate.all.le <- function() {
-	rename(all.le,
+	dplyr::rename(all.le,
 		sample.id = synis.id,
 		length = lengd,
 		maturity = kynthroski,
@@ -30,7 +31,7 @@ translate.all.le <- function() {
 
 
 translate.all.nu <- function() {
-	rename(all.nu,
+	dplyr::rename(all.nu,
 		sample.id = synis.id,
 		year = ar,
 		gear.type = veidarfaeri,
@@ -44,7 +45,7 @@ translate.all.nu <- function() {
 
 
 translate.allir.hopar <- function() {
-	rename(allir.hopar,
+	dplyr::rename(allir.hopar,
 		species.code = tegund,
 		food.group = faeduhopur,
 		category = flokkur,
@@ -54,7 +55,7 @@ translate.allir.hopar <- function() {
 
 
 translate.faeduhopar <- function() {
-	rename(faeduhopar,
+	dplyr::rename(faeduhopar,
 		species.code = tegund,
 		english.name = enskt.heiti,
 		food.group = faeduhopur,
@@ -66,7 +67,7 @@ translate.faeduhopar <- function() {
 
 
 translate.ffiskar <- function() {
-	rename(ffiskar,
+	dplyr::rename(ffiskar,
 		sample.id = synis.id,
 		length = lengd,
 		entry.number = faerslunumer,
@@ -84,7 +85,7 @@ translate.ffiskar <- function() {
 
 
 translate.fflokkar <- function() {
-	rename(fflokkar,
+	dplyr::rename(fflokkar,
 		sample.id = synis.id,
 		entry.number = faerslunumer,
 		nr.vomited = fj.aelt,
@@ -99,7 +100,7 @@ translate.fflokkar <- function() {
 
 
 translate.fhopar <- function() {
-	rename(fhopar,
+	dplyr::rename(fhopar,
 		count = fjoldi,
 		food.group = faeduhopur,
 		category.id = flokk.id,
@@ -110,7 +111,7 @@ translate.fhopar <- function() {
 
 
 translate.fkynthroski <- function() {
-	rename(fkynthroski,
+	dplyr::rename(fkynthroski,
 		sample.id = synis.id,
 		prey.sex = brad.kyn,
 		prey.maturity = brad.kynth,
@@ -126,7 +127,7 @@ translate.fkynthroski <- function() {
 
 
 translate.flengdir <- function() {
-	rename(flengdir,
+	dplyr::rename(flengdir,
 		sample.id = synis.id,
 		length = lengd,
 		count = fjoldi,
@@ -141,7 +142,7 @@ translate.flengdir <- function() {
 
 
 translate.fstaerdir <- function() {
-	rename(fstaerdir,
+	dplyr::rename(fstaerdir,
 		sample.id = synis.id,
 		length = lengd,
 		count = fjoldi,
@@ -157,7 +158,7 @@ translate.fstaerdir <- function() {
 
 
 translate.graluda.flk <- function() {
-	rename(graluda.flk,
+	dplyr::rename(graluda.flk,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -186,7 +187,7 @@ translate.graluda.flk <- function() {
 
 
 translate.graluda.stakir <- function() {
-	rename(graluda.stakir,
+	dplyr::rename(graluda.stakir,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -216,7 +217,7 @@ translate.graluda.stakir <- function() {
 
 
 translate.karfi.flk <- function() {
-	rename(karfi.flk,
+	dplyr::rename(karfi.flk,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -245,7 +246,7 @@ translate.karfi.flk <- function() {
 
 
 translate.leidr.stodvar <- function() {
-	rename(leidr.stodvar,
+	dplyr::rename(leidr.stodvar,
 		sample.id = synis.id,
 		trip.number = leidangur,
 		year = ar,
@@ -308,7 +309,7 @@ translate.leidr.stodvar <- function() {
 
 
 translate.lysa.stakir <- function() {
-	rename(lysa.stakir,
+	dplyr::rename(lysa.stakir,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -345,7 +346,7 @@ translate.lysa.stakir <- function() {
 
 
 #translate.reg.bc <- function() {
-#	rename(reg.bc,
+#	dplyr::rename(reg.bc,
 #		East = Austur,
 #		North.shallow = Grunnslod.nordur,
 #		Kantur.ne = Kantur.NE,
@@ -367,7 +368,7 @@ translate.lysa.stakir <- function() {
 
 
 translate.skotuselur.stakir <- function() {
-	rename(skotuselur.stakir,
+	dplyr::rename(skotuselur.stakir,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -404,7 +405,7 @@ translate.skotuselur.stakir <- function() {
 
 
 translate.stodvar <- function() {
-	rename(stodvar,
+	dplyr::rename(stodvar,
 		sample.id = synis.id,
 		trip.number = leidangur,
 		year = ar,
@@ -469,7 +470,7 @@ translate.stodvar <- function() {
 
 
 translate.torskur.flk <- function() {
-	rename(torskur.flk,
+	dplyr::rename(torskur.flk,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -498,7 +499,7 @@ translate.torskur.flk <- function() {
 
 
 translate.torskur.stakir <- function() {
-	rename(torskur.stakir,
+	dplyr::rename(torskur.stakir,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -535,7 +536,7 @@ translate.torskur.stakir <- function() {
 
 
 translate.ufsi.flk <- function() {
-	rename(ufsi.flk,
+	dplyr::rename(ufsi.flk,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -564,7 +565,7 @@ translate.ufsi.flk <- function() {
 
 
 translate.ufsi.stakir <- function() {
-	rename(ufsi.stakir,
+	dplyr::rename(ufsi.stakir,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -601,7 +602,7 @@ translate.ufsi.stakir <- function() {
 
 
 translate.ysa.flk <- function() {
-	rename(ysa.flk,
+	dplyr::rename(ysa.flk,
 		sample.id = synis.id,
 		year = ar,
 		month = man,
@@ -630,7 +631,7 @@ translate.ysa.flk <- function() {
 
 
 translate.ysa.stakir <- function() {
-	rename(ysa.stakir,
+	dplyr::rename(ysa.stakir,
 		sample.id = synis.id,
 		year = ar,
 		month = man,

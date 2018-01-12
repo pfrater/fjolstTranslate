@@ -1,0 +1,9 @@
+Notes for fjostTranslate
+
+To do
+*****
+
+1. You need to get the names of all data sets and place in them in a data file
+2. For each translate function, instead of placing all the names within a rename function, 
+    create a method to lookup names from data in #1 and rename to english based off of that
+3. Do the same or similar for fj_translate function
