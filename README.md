@@ -16,8 +16,8 @@ dat <- fjolst_translate(all.kv)
 names(dat)
 
 fjolst_names(ar, man, species.code, gear.type) # type in any combination of 
-                                              # icelandic or english names 
-                                              # to find out what they were translated to/from
+                                               # icelandic or english names 
+                                               # to find out what they were translated to/from
 ```
 
 ## Learn More
